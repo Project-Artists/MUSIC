@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto+Condensed:wght@700&display=swap');
+@import url('../common.css');
+
+*{
+    font-family: 'Noto Sans KR', sans-serif; 
+}
+
+section h2{
+    color: #fff; font-weight: 700; font-size: 50px;
+}
+
+#top-bighit{
+    padding: 160px 0;
+    background: orange;
+
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#top-bighit .title{
+    width: 100%;
+    padding: 20px;
+
+    position: absolute;
+    z-index: 10;
+
+    display: flex;
+    justify-content: center;
+}
+
+#top-bighit .bighit-box{
+    background: red;
+    padding: 0 30px;
+
+    /* position: relative;
+    z-index: 2;
+    top: 55px; */
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#top-bighit .bighit-box .bighit-about{
+    width: 80%;
+    background: #1b1b1b;
+    padding-top: 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#top-bighit .bighit-box .bighit-about p{
+    color: #999; font-weight: 700;
+}
+
+#middle-artists{
+    background: tomato;
+}
+#bottom-careers{
+    background: aqua;
+}
