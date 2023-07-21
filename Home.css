@@ -87,7 +87,7 @@ header .inner-header .logo img{
     height: 45px;
 }
 header .inner-header .lang-menu{
-    background: green;
+    /* background: green; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,7 +104,7 @@ header .lang-opt
 }
 header .lang-opt.open{
     opacity: 1;
-    background: green;
+    /* background: green; */
     width: 7%;
     height:280px; /*ul의 높이를 안보이게 처리*/
     text-align:center;
@@ -261,10 +261,6 @@ footer .inner-footer .site-menu .menu-arrow h2{
 footer .inner-footer .site-menu .menu-arrow span{
     flex: 1;
     
-}
-
-footer .family-nav{
-    display: none;
 }
 
 footer .right-info{
