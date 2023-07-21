@@ -12,6 +12,96 @@ a{
 .clearfix::after{
     content: ''; display: block; clear: both;
 }
+header{
+    color: #fff;
+}
+header #header-menu{
+    width: 100%; 
+    padding: 15px 30px;
+    background: #0000002a; opacity: 0.9;
+
+    position: fixed; top: 0; z-index: 999;
+
+    display: flex; justify-content: space-between;
+    align-items: center;
+}
+header #header-menu .lnr-menu{
+    font-weight: 600;
+    font-size: 25px;    
+}
+header #header-menu a{
+    font-size: 40px;
+}
+header #header-menu .lang-open .lang{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.gnb{
+    opacity: 0;
+    background: palegoldenrod;
+    width: 100%; top: 90px;
+    position: relative;
+    z-index: 2;
+}
+.gnb ul{
+    position: absolute;
+    right: 10px;
+    
+}
+.gnb ul li{
+    background: #282828;
+    color: #666; font-weight: 700; padding: 20px;
+    display: flex; justify-content: center;
+}
+.gnb ul li:nth-child(2){
+    background: yellowgreen;
+}
+
+.gnb:hover{
+    opacity: 1;
+}
+
+footer{
+    padding: 0 25px;
+    color: #848383; font-weight: 700;
+    height: 60px;
+    background: #282828;
+    /* background: #282828; */
+
+    display: flex; justify-content: center; 
+    align-items: center; 
+}
+
+footer .footer-menu{
+    /* background: pink;  */
+    width: 100%; 
+    display: flex; justify-content: space-between; align-items: center;
+}
+footer .icon img{
+    background: #232321;
+
+    border-radius: 50%;
+    width: 30px;
+}
+footer .family{
+    padding: 10px 110px;
+    border-bottom: 2px solid #999;
+}
+
+footer .web{
+    /* background: gold;  */
+    font-size: 10px;
+}
+footer .web p{
+    padding-top: 5px;
+}
+
+
+
+
+
+
 .btn{
 background: #fff; color: #333; font: inherit; 
 font-weight: 700;
