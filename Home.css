@@ -80,3 +80,43 @@ header .inner-header .lang-menu{
 header .lang{
     display: none;
 }
+main {
+    width: 100%;
+    height: 90vh;
+    background: rgb(230,20,130);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+main .back {
+}
+
+
+main .back .carousel{
+    position: relative;
+    bottom: -70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: #000; */
+}
+main .back .carousel ul{
+    width: 110px;
+    display: flex;
+    justify-content:space-evenly;
+}
+main .back .carousel li{
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+}
+main .back .carousel .fitst-btn ~li{
+    background: rgb(255,255,255,0.7);
+}
+
+
