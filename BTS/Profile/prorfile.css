@@ -4,23 +4,26 @@
 }
 body {
     color: #fff;
-    font-family: sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 .wrapper{
-    background: rgba(22, 22, 22, 0.95);
+    background: rgba(0, 0, 0, 0.90);
 }
 /* header style */
 .wrapper.header {
-    padding: 20px 0;
     position: fixed;
     width: 100%;
     top: 0;
+    left: 0;
     z-index: 999;
+    
     
 }
 .wrapper .header .header-bts {
-    width: 92%;
+    width: 100%;
     margin: 0 auto;
+    
+    background: rgba(0, 0, 0, 0.2);
 
     display: flex;
     align-items:center;
@@ -41,7 +44,7 @@ body {
     position: relative;
     height: 80%;
     background: url(../img/btn-gnb-m.png) no-repeat center;
-    background-size: 100% auto;
+    background-size: 60% auto;
     z-index: 1;
 }
 .wrapper .header .header-bts .active {
@@ -54,7 +57,7 @@ body {
     flex: 1;
 }
 .wrapper .header .header-bts .logo img {
-    height: 60px;
+    height: 30px;
 }
 .wrapper .header .header-bts .lang-opt {
     /* border: 2px solid aqua; */
@@ -64,7 +67,7 @@ body {
 }
 .wrapper .header .header-bts .lang-opt p {
     font-weight: 700;
-    font-size: 2em;
+    color: #ccc;
 }
 .wrapper .header .header-bts .lang-opt .lang-inner {
     opacity: 0;
@@ -75,12 +78,58 @@ body {
     
 }
 .wrapper main .kv .contents-obj {
-    width: 90%;
-    padding-top: 20%;
-    overflow: hidden;
+    width: 1440px;
+   
 }
 .wrapper main .kv .contents-obj img {
     width: 100%;
+    overflow: hidden;
     margin: 0 auto;
     display: block;
+}
+
+main .profile {
+
+}
+main .profile .intro {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+    
+}
+main .profile .intro .box {
+    display: flex;
+    flex-direction: row;
+    max-width: 1440px;
+}
+main .profile .intro .box h2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    width: 1000px;
+
+    font-size: 80px;
+    font-weight: 700;
+}
+main .profile .intro .box p {
+    display: flex;
+    align-items: start;
+    padding: 40px 20px 0 100px ;
+    color: #ccc;
+    
+    font-size: 1.2em;
+    font-weight: 500;
+}
+main .profile .members {
+    background: rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: center;
+}
+main .profile .members .members-inner {
+    width: 1600px;
+}
+main .profile .members .members-inner .member-list {
+    display: flex;
+    justify-content: start;
+    width: 400px;
 }
