@@ -92,8 +92,7 @@ main {
     
 }
 
-main .back {
-}
+
 
 
 main .back .carousel{
@@ -117,6 +116,28 @@ main .back .carousel li{
 }
 main .back .carousel .fitst-btn ~li{
     background: rgb(255,255,255,0.7);
+}
+footer{
+    background: #000;
+    color: #fff;
+}
+footer .social ul li a{
+    border: 2px solid #fff;
+    display: block;
+    width: 44px;
+    height: 44px;
+}
+footer .social ul li a.twitter {
+    background-image: url('img/twitter.png');
+}
+footer .social ul li a.facebook{
+    background-image: url('img/facebook.png');
+}
+footer .social ul li a.youtube {
+    background-image: url('img/youtube.png');
+}
+footer .social ul li a.naverpost{
+    background-image: url('img/naver_post.png');
 }
 
 
