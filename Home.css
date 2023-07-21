@@ -7,7 +7,7 @@ header{
 header .inner-header {
     background: rgba(0,0,0,0.2);
     width: 100%;
-    height: 120px;
+    height: 100px;
     margin:0 auto;
     display: flex;
     justify-content: space-between;
@@ -29,27 +29,48 @@ header .gnb {
     width: 100%;
     height: 90vh;
     color: #666;
-    /* background: #000; */
+    background: #000;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 35px;
     position: fixed;
     left: 0;
     top:0;
-    /* display: flex; */
-
-
-}
-header .gnb ul {
-    line-height: 3.0;
-}
-header .gnb ul a :visited{
-
-}
-header .gnb .close {
-    margin-left: 20px;
     
-
 }
+header .gnb.open{
+    display: flex;
+    text-align: center;
+    color: #fff;
+    
+}
+header .gnb.open a.close{
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+header .gnb.open ul{
+    /* background: green; */
+    position:relative;
+    left: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height:3.0;
+}
+header .gnb.open li{
+    width: 100%;
+    /* background: skyblue; */
+    border-bottom:3px solid rgba(132,131,131,0.7);
+    display: flex;
+    justify-content: center;
+    
+}
+header .gnb.open li a{
+    /* background: yellow; */
+   
+}
+
 header .gnb .close span{
     font-weight: 700;
     font-size: 50px;
@@ -66,7 +87,7 @@ header .inner-header .logo img{
     height: 45px;
 }
 header .inner-header .lang-menu{
-    /* background: green; */
+    background: green;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,9 +98,46 @@ header .inner-header .lang-menu{
     text-shadow: 0px 0px 0.56vw rgba(0, 0, 0, 0.4);
 
 }
-header .lang{
-    display: none;
+header .lang-opt
+{
+    opacity: 0;
 }
+header .lang-opt.open{
+    opacity: 1;
+    background: green;
+    width: 7%;
+    height:280px; /*ul의 높이를 안보이게 처리*/
+    text-align:center;
+    float: right;  
+}
+header .lang-opt ul{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+header .lang-opt li{
+    width: 100%;
+    height: 70px;
+    background: #fff;
+    color: #000;
+    font-weight: 700;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .lang-opt li:first-child{
+   background: #000;
+   color: #fff;
+}
+
+header .lang-opt li:hover{
+    color: #fff;
+    background: #000;
+}
+
+
 main {
     width: 100%;
     height: 90vh;
