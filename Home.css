@@ -172,8 +172,12 @@ main .back .carousel li{
     background: #fff;
     border-radius: 50%;
 }
+
 main .back .carousel .fitst-btn ~li{
     background: rgb(255,255,255,0.7);
+}
+main .back .carousel li:hover{
+    background: #fff;
 }
 
 /* footer  */
