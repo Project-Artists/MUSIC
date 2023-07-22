@@ -75,7 +75,7 @@ section .title{
     justify-content: center;
 
     position: absolute;
-    top: -55px;
+    top: -70px;
 }
 
 #middle-artists .artists-box{
@@ -87,7 +87,7 @@ section .title{
 }
 
 #middle-artists .artists-box a{
-    margin-right: 15px;
+    margin-right: 30px;
 }
 #middle-artists .artists-box a:nth-child(3){
     padding-right: 0;
@@ -119,11 +119,10 @@ section .title{
     width: 100%;
     margin: 50px auto; padding: 0 20%;     
 
-    display: flex;
-    justify-content: center;
+    display: flex; justify-content: center;
 
     text-align: center; color: #999;
-    line-height: 25px;
+    line-height: 30px;
 }
 
 #bottom-careers .boxsupport{

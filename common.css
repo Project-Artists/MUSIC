@@ -13,12 +13,12 @@ a{
     content: ''; display: block; clear: both;
 }
 header{
-    color: #fff;
+    color: #999;
 }
 header #header-menu{
     width: 100%; 
     padding: 15px 30px;
-    background: #0000002a; opacity: 0.9;
+    background: #0000002a; opacity: 0.8;
 
     position: fixed; top: 0; z-index: 999;
 
@@ -36,6 +36,9 @@ header #header-menu .lang-open .lang{
     font-size: 15px;
     font-weight: 700;
 }
+header #header-menu .lang-open .lang:hover{
+    color: #fff;
+}
 
 .gnb{
     opacity: 0;
@@ -45,7 +48,7 @@ header #header-menu .lang-open .lang{
     z-index: 2;
 }
 .gnb ul{
-    position: absolute;
+    position: fixed;
     right: 10px;
     
 }
@@ -54,8 +57,8 @@ header #header-menu .lang-open .lang{
     color: #666; font-weight: 700; padding: 20px;
     display: flex; justify-content: center;
 }
-.gnb ul li:nth-child(2){
-    background: yellowgreen;
+.gnb ul li:nth-child(1){
+    background: #fff;
 }
 
 .gnb:hover{
