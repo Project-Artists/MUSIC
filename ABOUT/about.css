@@ -168,7 +168,7 @@ section .title{
 
 @media screen and (max-width: 414px) {  
     header{
-        width: 390px;
+        width:100%;
     }
     header #header-menu{
         display: flex;
@@ -180,7 +180,7 @@ section .title{
     }
     
     #top-bighit .bighit-box .bighit-about{
-        width: 400px;
+        /* width: 400px; */
         text-align: left;
     }
     #middle-artists .artists-box {
