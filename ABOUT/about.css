@@ -84,10 +84,12 @@ section .title{
 
 #middle-artists .artists-box{
     background: #282828; 
+    padding: 0 20%;
+    /* background: red; */
     
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -184,6 +186,7 @@ section .title{
         text-align: left;
     }
     #middle-artists .artists-box {
+        padding: 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
