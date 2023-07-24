@@ -19,6 +19,7 @@ section .title{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 #top-bighit .title{
@@ -30,19 +31,22 @@ section .title{
 
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 #top-bighit .bighit-box{
-    padding: 0 30px;
+    padding: 0 20px;
 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
+#top-bighit .bighit-box img{
+    width: 100%;
+}
 
 #top-bighit .bighit-box .bighit-about{
-    width: 80%;
     padding: 30px 0;
 
     display: flex;
@@ -79,16 +83,23 @@ section .title{
 }
 
 #middle-artists .artists-box{
-    background: #282828;
+    background: #282828; 
     
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 #middle-artists .artists-box a{
-    margin-right: 30px;
+    /* margin-right: 30px; */
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
+
 #middle-artists .artists-box a:nth-child(3){
     padding-right: 0;
 }
@@ -109,7 +120,7 @@ section .title{
     display: flex; justify-content: center; flex-wrap: wrap;
 }
 #bottom-careers .title{
-    width: 100%; padding: 10px 0;
+    width: 90%; margin: 10px auto;
 
     display: flex;
     justify-content: center;
@@ -135,7 +146,8 @@ section .title{
 
 #bottom-careers .boxsupport a{
     /* background: aqua; */
-    width: 100%; padding: 25px 20px;
+    width: 100%; 
+    padding: 25px 20px;
     font-weight: 700; font-size: 15px; color: #999;
 
     display: flex;
@@ -152,6 +164,71 @@ section .title{
 }
 #bottom-careers .boxsupport a:hover{
     color: #c2c2c2;
+}
+
+@media screen and (max-width: 414px) {  
+    header{
+        width: 390px;
+    }
+    header #header-menu{
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+    }
+    header #header-menu a{
+        font-size: 0;
+    }
+    
+    #top-bighit .bighit-box .bighit-about{
+        width: 400px;
+        text-align: left;
+    }
+    #middle-artists .artists-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #middle-artists .artists-box a{
+        width: 100%;
+        margin: 0;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    #middle-artists .artists-box a img{
+        width: 85%;
+    }
+
+    #bottom-careers span{
+        padding: 0 10%;
+    }
+    footer{
+        height: 180px;
+    }
+    footer .footer-menu{
+        margin: 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    footer .footer-menu .family{
+        left: 0;
+    }
+
+    footer .web{
+        margin: 10px 0;
+    }
+    footer .web p{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    
 }
 
 
